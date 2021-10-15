@@ -161,7 +161,7 @@
 .ex-12-bottom-white {
     position: absolute;
     bottom: -10px;
-    right: 20%;
+    right: 40px;
     background: #f5f5f5;
     width: 60px;
     height: 20px;
@@ -169,7 +169,8 @@
 
 .ex-12-button:hover .ex-12-top-white {
     animation-name: top-move;
-    animation-duration: 3s;
+    animation-duration: 2s;
+    animation-timing-function: linear;
 }
 
 @keyframes top-move {
@@ -178,18 +179,15 @@
 
 .ex-12-button:hover .ex-12-bottom-white {
     animation-name: bottom-move;
-    animation-duration: 3s;
+    animation-duration: 2s;
+    animation-timing-function: linear;
 }
 
 @keyframes bottom-move {
     50% {right: 134px;}
 }
 
-
-
-
-
-
+/* esercizio 13 */
 .ex-13-button {
     position: relative;
     display: block;
@@ -207,7 +205,7 @@
 .ex-13-top-white {
     position: absolute;
     top: -10px;
-    left: 10%;
+    left: 20px;
     background: #f5f5f5;
     width: 60px;
     height: 20px;
@@ -216,8 +214,58 @@
 .ex-13-bottom-white {
     position: absolute;
     bottom: -10px;
-    right: 20%;
+    right: 40px;
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+}
+
+.ex-13-button:hover .ex-13-top-white {
+    animation-name: top13-move;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes top13-move {
+    20% {
+        top: -10px;
+        left: 167px;
+    }
+    40% {
+        top: 60px;
+        left: 167px;
+    }
+    60% {
+        top: 60px;
+        left: -30px;
+    }
+    80% {
+        top: -10px;
+        left: -30px;
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation-name: bottom13-move;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes bottom13-move {
+    20% {
+        bottom: -10px;
+        right: 167px;
+    }
+    40% {
+        bottom: 60px;
+        right: 167px;
+    }
+    60% {
+        bottom: 60px;
+        right: -30px;
+    }
+    80% {
+        bottom: -10px;
+        right: -30px;
+    }
 }
